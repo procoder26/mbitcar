@@ -1,4 +1,4 @@
-# Microbit Car
+# Micro:Bit Car
 - Requires **2** Micro:Bits. 
 ## Transmitter
 - Uses **TILT** to steer.
