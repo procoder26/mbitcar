@@ -1,6 +1,6 @@
 # Micro:Bit Car
 - Requires **2** Micro:Bits.
-- [MakeCode Simulation]([url](https://makecode.microbit.org/_DhEEAuFV1HUc))
+- MakeCode Simulation: https://makecode.microbit.org/_DhEEAuFV1HUc
 ## Transmitter
 - Uses **TILT** to steer.
 - By selecting Button A the car *should* move forward.
