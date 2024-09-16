@@ -1,3 +1,4 @@
+
 //USE WHEN LOOKING AT MAKECODE SIMULATIONS
 
 //receiver
@@ -9,10 +10,10 @@ let speed = 20
 
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
-        servos.P1.setAngle(90+speed)
+        servos.P1.setAngle(90 + speed)
     }
     if (receivedNumber == 2) {
-        servos.P1.setAngle(90-speed)
+        servos.P1.setAngle(90 - speed)
     }
     if (receivedNumber == 3) {
         servos.P1.setAngle(90)
@@ -31,22 +32,21 @@ radio.onReceivedValue(function (name, value) {
 //HAVE FUN!
 radio.setGroup(181)
 
-input.onButtonPressed(Button.A, function () {
-    radio.sendNumber(1)
-})
-input.onButtonPressed(Button.B, function () {
-    radio.sendNumber(2)
-})
-input.onButtonPressed(Button.AB, function () {
-    radio.sendNumber(3)
-})
-
 basic.forever(function () {
     radio.sendValue("rotate", pins.map(
-    input.acceleration(Dimension.X),
-    -1023,
-    1023,
-    30,
-    150
+        input.acceleration(Dimension.X),
+        -1023,
+        1023,
+        50,
+        130
     ))
+    if (input.buttonIsPressed(Button.A)) {
+        radio.sendNumber(1)
+    }
+    else if (input.buttonIsPressed(Button.B)) {
+        radio.sendNumber(2)
+    }
+    else {
+        radio.sendNumber(3)
+    }
 })
