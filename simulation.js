@@ -1,4 +1,3 @@
-
 //USE WHEN LOOKING AT MAKECODE SIMULATIONS
 
 //receiver
@@ -10,9 +9,12 @@ let speed = 20
 
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
+        servos.P1.setAngle(90)
         servos.P1.setAngle(90 + speed)
+        
     }
     if (receivedNumber == 2) {
+        servos.P1.setAngle(90)
         servos.P1.setAngle(90 - speed)
     }
     if (receivedNumber == 3) {
