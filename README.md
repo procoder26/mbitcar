@@ -2,7 +2,7 @@
 - Requires **2** Micro:Bits.
 - MakeCode Simulation: https://makecode.microbit.org/_DhEEAuFV1HUc
 - The servo extension is needed on all of the files before downloading to Micro:Bit.
-- No Micro:Bit's should be on frequency `181` while the car is in motion. This can affect the performance of the car and signal. 
+- No Micro:Bits should be on frequency `181` while the car is in motion. This can affect the performance of the car and signal. 
 ## Transmitter
 - Uses **TILT** to steer.
 - By selecting Button A the car *should* move forward.
