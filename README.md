@@ -1,6 +1,7 @@
 # Micro:Bit Car
 - Requires **2** Micro:Bits.
 - MakeCode Simulation: https://makecode.microbit.org/_DhEEAuFV1HUc
+- The servo extension is needed on all of the files before downloading to Micro:Bit. 
 ## Transmitter
 - Uses **TILT** to steer.
 - By selecting Button A the car *should* move forward.
